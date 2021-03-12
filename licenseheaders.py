@@ -62,49 +62,64 @@ TYPE_SETTINGS = {
     # All the languages with C style comments:
     "c": {
         "extensions": [".c", ".cc", ".h"],
-    }.update(c_style_comments),
+        **c_style_comments
+    },
     "cpp": {
         "extensions": [".cpp", ".hpp", ".cxx", ".hxx", ".ixx"],
-    }.update(c_style_comments),
+        **c_style_comments
+    },
     "csharp": {
         "extensions": [".cs", ".csx"],
-    }.update(c_style_comments),
+        **c_style_comments
+    },
     "d": {
         "extensions": [".d"],
-    }.update(c_style_comments),
+        **c_style_comments
+    },
     "go": {
         "extensions": [".go"],
-    }.update(c_style_comments),
+        **c_style_comments
+    },
     "groovy": {
         "extensions": [".groovy"],
-    }.update(c_style_comments),
+        **c_style_comments
+    },
     "java": {
         "extensions": [".java", ".jape"],
-    }.update(c_style_comments),
+        **c_style_comments
+    },
     "javascript": {
         "extensions": [".js", ".js", ".cjs", ".mjs"],
-    }.update(c_style_comments),
+        **c_style_comments
+    },
     "kotlin": {
         "extensions": [".kt", ".kts", ".ktm"],
-    }.update(c_style_comments),
+        **c_style_comments
+    },
     "objective-c": {
         "extensions": [".m", ".mm", ".M"],
-    }.update(c_style_comments),
+        **c_style_comments
+    },
     "php": {
         "extensions": [".php," ".phtml," ".php3," ".php4," ".php5," ".php7," ".phps," ".php-s," ".pht," ".phar"],
-    }.update(c_style_comments),
+        **c_style_comments
+    },
     "rust": {
         "extensions": [".rs"],
-    }.update(c_style_comments),
+        **c_style_comments
+    },
     "scala": {
         "extensions": [".scala"],
-    }.update(c_style_comments),
+        **c_style_comments
+    },
     "swift": {
         "extensions": [".swift"],
-    }.update(c_style_comments),
+        **c_style_comments
+    },
     "typescript": {
         "extensions": [".ts", ".tsx"],
-    }.update(c_style_comments),
+        **c_style_comments
+    },
     "script": {
         "extensions": [".sh", ".csh", ".pl"],
         "keepFirst": re.compile(r'^#!|^# -\*-'),
