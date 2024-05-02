@@ -77,6 +77,18 @@ TYPE_SETTINGS = {
     "scala": update_c_style_comments([".scala"]),
     "swift": update_c_style_comments([".swift"]),
     "typescript": update_c_style_comments([".ts", ".tsx"]),
+    "fortran": {
+        "extensions": [".f",".f90",".f95",".f03"],
+        "keepFirst": None,
+        "blockCommentStartPattern": None,
+        "blockCommentEndPattern": None,
+        "lineCommentStartPattern": re.compile(r'^\s*!'),
+        "lineCommentEndPattern": None,
+        "headerStartLine": "!\n",
+        "headerEndLine": "!\n",
+        "headerLinePrefix": "! ",
+        "headerLineSuffix": None
+    },
     "script": {
         "extensions": [".sh", ".csh", ".pl"],
         "keepFirst": re.compile(r'^#!|^# -\*-'),
